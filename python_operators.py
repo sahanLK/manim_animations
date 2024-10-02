@@ -9,6 +9,7 @@ class ArithmeticOperators(Scene):
         title = Text("Arithmetic Operators", font_size=40, color=BLACK)
         self.play(Create(title, run_time=0.0001))
         self.play(title.animate.shift((FRAME_Y_RADIUS - 1) * UP))
+        self.wait(20)
 
         # List of arithmetic operators
         operators = [
@@ -35,6 +36,7 @@ class ComparisonOperators(Scene):
         title = Text("Comparison Operators", font_size=40, color=BLACK)
         self.play(Create(title, run_time=0.0001))
         self.play(title.animate.shift((FRAME_Y_RADIUS - 1) * UP))
+        self.wait(20)
 
         # List of arithmetic operators
         operators = [
@@ -50,7 +52,6 @@ class ComparisonOperators(Scene):
             dot = Dot(color=BLACK).move_to(((FRAME_Y_RADIUS / 3) - index * 0.7) * UP).shift((FRAME_X_RADIUS // 2) * LEFT)
             text = Text(text, font_size=20, color=BLACK).next_to(dot)
             self.play(Create(dot, run_time=0.1), Create(text, run_time=0.2))
-            self.wait(2)
 
         self.wait(90)
 
@@ -60,6 +61,7 @@ class AssignmentOperators(Scene):
         title = Text("Assignment Operators", font_size=40, color=BLACK)
         self.play(Create(title, run_time=0.0001))
         self.play(title.animate.shift((FRAME_Y_RADIUS - 1) * UP))
+        self.wait(20)
 
         # List of arithmetic operators
         operators = [
@@ -77,7 +79,6 @@ class AssignmentOperators(Scene):
             dot = Dot(color=BLACK).move_to(((FRAME_Y_RADIUS / 2.5) - index * 0.7) * UP).shift((FRAME_X_RADIUS // 1.6) * LEFT)
             text = Text(text, font_size=20, color=BLACK).next_to(dot)
             self.play(Create(dot, run_time=0.1), Create(text, run_time=0.2))
-            self.wait(2)
 
         self.wait(90)
 
@@ -87,6 +88,7 @@ class LogicalOperators(Scene):
         title = Text("Logical Operators", font_size=40, color=BLACK)
         self.play(Create(title, run_time=0.0001))
         self.play(title.animate.shift((FRAME_Y_RADIUS - 1) * UP))
+        self.wait(20)
 
         # List of arithmetic operators
         operators = [
@@ -99,7 +101,6 @@ class LogicalOperators(Scene):
             dot = Dot(color=BLACK).move_to(((FRAME_Y_RADIUS / 2.5) - index * 1) * UP).shift((FRAME_X_RADIUS // 1.6) * LEFT)
             text = Text(text, font_size=20, color=BLACK).next_to(dot)
             self.play(Create(dot, run_time=0.1), Create(text, run_time=0.2))
-            self.wait(2)
 
         self.wait(90)
 
@@ -109,6 +110,7 @@ class BitwiseOperators(Scene):
         title = Text("Bitwise Operators", font_size=40, color=BLACK)
         self.play(Create(title, run_time=0.0001))
         self.play(title.animate.shift((FRAME_Y_RADIUS - 1) * UP))
+        self.wait(20)
 
         # List of arithmetic operators
         operators = [
@@ -124,7 +126,6 @@ class BitwiseOperators(Scene):
             dot = Dot(color=BLACK).move_to(((FRAME_Y_RADIUS / 2.5) - index * 0.7) * UP).shift((FRAME_X_RADIUS // 1.6) * LEFT)
             text = Text(text, font_size=20, color=BLACK).next_to(dot)
             self.play(Create(dot, run_time=0.1), Create(text, run_time=0.2))
-            self.wait(2)
 
         self.wait(90)
 
@@ -134,6 +135,7 @@ class MembershipOperators(Scene):
         title = Text("Membership Operators", font_size=40, color=BLACK)
         self.play(Create(title, run_time=0.0001))
         self.play(title.animate.shift((FRAME_Y_RADIUS - 1) * UP))
+        self.wait(20)
 
         # List of arithmetic operators
         operators = [
@@ -145,7 +147,6 @@ class MembershipOperators(Scene):
             dot = Dot(color=BLACK).move_to(((FRAME_Y_RADIUS / 2.5) - index * 0.7) * UP).shift((FRAME_X_RADIUS // 1.6) * LEFT)
             text = Text(text, font_size=20, color=BLACK).next_to(dot)
             self.play(Create(dot, run_time=0.1), Create(text, run_time=0.2))
-            self.wait(2)
 
         self.wait(90)
 
@@ -155,18 +156,18 @@ class IdentityOperators(Scene):
         title = Text("Identity Operators", font_size=40, color=BLACK)
         self.play(Create(title, run_time=0.0001))
         self.play(title.animate.shift((FRAME_Y_RADIUS - 1) * UP))
+        self.wait(20)
 
         # List of arithmetic operators
         operators = [
-            'is  ( True if both variables point to the same object )',
-            'is not    ( True if both variables do not point to the same object )',
+            'is         ( True if both variables point to the same object )',
+            'is  not    ( True if both variables do not point to the same object )',
         ]
 
         for index, text in enumerate(operators):
             dot = Dot(color=BLACK).move_to(((FRAME_Y_RADIUS / 2.5) - index * 0.7) * UP).shift((FRAME_X_RADIUS // 1.6) * LEFT)
             text = Text(text, font_size=20, color=BLACK).next_to(dot)
             self.play(Create(dot, run_time=0.1), Create(text, run_time=0.2))
-            self.wait(2)
 
         self.wait(90)
 
